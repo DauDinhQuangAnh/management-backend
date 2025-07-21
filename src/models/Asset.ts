@@ -1,0 +1,31 @@
+export interface Asset {
+  asset_id: number;
+  asset_code?: string;
+  asset_name?: string;
+  category_id?: number;
+  brand?: string;
+  OS?: string;
+  OFFICE?: string;
+  software_used?: string[];
+  configuration?: string;
+  model?: string;
+  serial_number?: string;
+  type?: string;
+  ip_address?: string[];
+  old_ip_address?: string[];
+  mac_address?: string;
+  mac_wifi?: string;
+  hub?: string;
+  vcs_lan_no?: string;
+  start_use_date?: Date;
+  belongs_to_dept_id?: number;
+  vendor_id?: number;
+  location_id?: string;
+  purchase_date?: Date;
+  purchase_price?: number;
+  warranty_expiry?: Date;
+  maintenance_cycle?: number;
+  status_id?: number;
+  upgrade_infor?: string;
+  notes?: string;
+} 

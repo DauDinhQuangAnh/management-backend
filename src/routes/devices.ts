@@ -1,9 +1,8 @@
 import express from 'express';
 const router = express.Router();
 
-// Temporary routes
 router.get('/', (req, res) => {
-  res.json({ message: 'Devices route working' });
+  res.json({ message: 'Danh sách devices (mẫu)' });
 });
 
 export default router; 

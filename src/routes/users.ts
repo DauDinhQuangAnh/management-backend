@@ -1,12 +1,12 @@
 import express from 'express';
 import { registerUser, loginUser } from '../controllers/user/login_logout';
+import { getMe } from '../controllers/user/getmee';
+import { editMe } from '../controllers/user/editme';
 const router = express.Router();
 
 router.post('/register', registerUser);
 router.post('/login', loginUser);
-
-router.get('/', (req, res) => {
-  res.json({ message: 'Danh sách users (mẫu)' });
-});
+router.get('/me', getMe);
+router.put('/me', editMe);
 
 export default router; 

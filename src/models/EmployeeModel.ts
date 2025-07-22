@@ -9,8 +9,8 @@ export interface IEmployee extends Document {
   password?: string;
   role?: string;
   status_account?: string;
-  department_id?: number;
-  business_unit_id?: number;
+  department_id?: string;
+  business_unit_id?: string;
   position?: string;
   join_date?: Date;
   leave_date?: Date;
@@ -27,8 +27,8 @@ const EmployeeSchema: Schema = new Schema({
   password: String,
   role: String,
   status_account: String,
-  department_id: Number,
-  business_unit_id: Number,
+  department_id: String,
+  business_unit_id: String,
   position: String,
   join_date: Date,
   leave_date: Date,

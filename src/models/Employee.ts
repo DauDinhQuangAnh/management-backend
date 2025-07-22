@@ -1,5 +1,5 @@
 export interface Employee {
-  employee_id: number;
+  employee_id: string;
   emp_code: string;
   first_name?: string;
   last_name?: string;
@@ -8,8 +8,8 @@ export interface Employee {
   password?: string;
   role?: string;
   status_account?: string;
-  department_id?: number;
-  business_unit_id?: number;
+  department_id?: string;
+  business_unit_id?: string;
   position?: string;
   join_date?: Date;
   leave_date?: Date;
